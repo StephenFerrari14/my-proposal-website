@@ -2,7 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 const yTranslates = [10, 30, 50, 70];
-const stageDurations = [1, 4, 6, 9];
+const stageDurations = [1, 4, 7, 10];
 
 const stageOneKeyframe = keyframes`
 0% {
@@ -83,16 +83,16 @@ const Results = (props) => {
   return (
     <div>
       <StageOne>
-        <div>Stage 1</div>
+        <div>Based on your search results...</div>
       </StageOne>
       <StageTwo>
-        <div>Stage 2</div>
+        <div>Your perfect match is...</div>
       </StageTwo>
       <StageThree>
-        <div>Stage 3</div>
+        <div>Stephen Ferrari</div>
       </StageThree>
       <StageFour>
-        <div>Stage 4</div>
+        <div>Will you marry him?</div>
       </StageFour>
     </div>
   );
