@@ -1,8 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-// const duration = 5000;
-
 const yTranslates = [10, 30, 50, 70];
 const stageDurations = [1, 4, 6, 9];
 
@@ -20,7 +18,6 @@ const stageOneKeyframe = keyframes`
 }
 `;
 
-// Add in delays
 const stageTwoKeyframe = keyframes`
 0% {
   opacity: 0;
@@ -63,11 +60,7 @@ const stageFourKeyframe = keyframes`
 }
 `;
 
-// Thinking now to do fade and slide transitions and just delay the enimation itself instead of stepped
-// Come back to the stepper idea though if it works
-
 const Results = (props) => {
-  // const [startSteps, setStartSteps] = useState(false);
   const startSteps = props.searched;
 
   const StageOne = styled.div`

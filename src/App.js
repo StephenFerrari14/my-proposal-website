@@ -7,7 +7,6 @@ import Articles from './components/Articles';
 import MenuAppBar from './components/MenuAppBar';
 import banner from './assets/banner.png';
 
-// Try out netlify
 
 function App() {
   const [searchValue, setSearchValue] = useState('');
@@ -16,11 +15,8 @@ function App() {
   return (
     <div className="App">
       <MenuAppBar></MenuAppBar>
-      {/* <Header></Header> */}
-      {/* <HeaderSearch></HeaderSearch> */}
       <Container>
         <img src={banner} alt="banner" style={{width: '100%'}}></img>
-        {/* Commented out to hide for now but it works */}
         <SearchBar
           onChange={setSearchValue}
           onRequestSearch={() => setSubmitSearch(true)}
